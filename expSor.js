@@ -1,4 +1,4 @@
-var repo_site = "https://github.com/AquaMela/Gacha/";
+var repo_site = "https://AquaMela.github.io/Gacha/";
 
 var swid = document.documentElement.clientWidth * 0.8;
 var shgt = document.documentElement.clientHeight * 0.8;
