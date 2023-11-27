@@ -1,21 +1,41 @@
-Qualtrics.SurveyEngine.addOnload(function()
+<html>
+<head>
+  <title>Gacha Sor</title>
+  <script src="./jspsych-6.3.1/jspsych.js"></script>
+  <script src="./jspsych-6.3.1/plugins/jspsych-html-keyboard-response.js"></script>
+  <script src="./jspsych-6.3.1/plugins/jspsych-canvas-keyboard-response.js"></script> 
+  <script src="./jspsych-6.3.1/plugins/jspsych-html-button-response.js"></script>
+  <script src="./jspsych-6.3.1/plugins/jspsych-image-keyboard-response.js"></script>
+  <script src="./jspsych-6.3.1/plugins/jspsych-preload.js"></script>
+  <link href="./jspsych-6.3.1/css/jspsych.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#000000", text="#ffffff"></body>
+<style>
+  .image-container {
+    display: flex;
+    overflow: hidden;
+    width: 10%; /* 画面幅いっぱいに表示 */
+  }
+</style>
+<script>
+    Qualtrics.SurveyEngine.addOnload(function()
 {
      /*Place your JavaScript here to run when the page is fully displayed*/
      var qthis = this;
      qthis.hideNextButton();
  
-     var task_github = "https://github.com/AquaMela/Gacha/"; 
+     var task_github = "https://github.com/AquaMela/Gacha.git"; 
      // https://<GitHubのユーザー名>.github.io/<レポジトリ名>/
  
      var requiredResources = [
          task_github + "jspsych-6.3.1/jspsych.js",
          task_github + "jspsych-6.3.1/plugins/jspsych-html-keyboard-response.js",
          task_github + "jspsych-6.3.1/plugins/jspsych-canvas-keyboard-response.js",
-         task_github + "/jspsych-6.3.1/plugins/jspsych-html-button-response.js",
+         task_github + "jspsych-6.3.1/plugins/jspsych-html-button-response.js",
          task_github + "jspsych-6.3.1/plugins/jspsych-image-keyboard-response.js",
          task_github + "jspsych-6.3.1/plugins/jspsych-preload.js",
          task_github + "jspsych-6.3.1/css/jspsych.css",
-         task_github + "main.js"
+         task_github + "expSor.js"
      ];
  
      function loadScript(idx) {
@@ -65,3 +85,5 @@ Qualtrics.SurveyEngine.addOnUnload(function()
     /*Place your JavaScript here to run when the page is unloaded*/
 
 });
+</script>
+</html>

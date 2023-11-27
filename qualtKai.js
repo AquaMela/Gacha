@@ -4,14 +4,14 @@ Qualtrics.SurveyEngine.addOnload(function()
      var qthis = this;
      qthis.hideNextButton();
  
-     var task_github = "https://github.com/AquaMela/Gacha.git"; 
+     var task_github = "https://github.com/AquaMela/Gacha/"; 
      // https://<GitHubのユーザー名>.github.io/<レポジトリ名>/
  
      var requiredResources = [
          task_github + "jspsych-6.3.1/jspsych.js",
          task_github + "jspsych-6.3.1/plugins/jspsych-html-keyboard-response.js",
          task_github + "jspsych-6.3.1/plugins/jspsych-canvas-keyboard-response.js",
-         task_github + "/jspsych-6.3.1/plugins/jspsych-html-button-response.js",
+         task_github + "jspsych-6.3.1/plugins/jspsych-html-button-response.js",
          task_github + "jspsych-6.3.1/plugins/jspsych-image-keyboard-response.js",
          task_github + "jspsych-6.3.1/plugins/jspsych-preload.js",
          task_github + "jspsych-6.3.1/css/jspsych.css",
