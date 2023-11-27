@@ -1,11 +1,11 @@
-var repo_site = "https://github.com/AquaMela/Gacha.git";
+var repo_site = "https://AquaMela.github.io/Gacha/";
 
 var swid = document.documentElement.clientWidth*0.8;
 var shgt = document.documentElement.clientHeight*0.8;
 var nitem = 10;
 var thre1 = 0.96; //SSRの確率
 var thre2 = 0.71; //SRの確率
-const stmfl = ["repo_site+'img/SSR.png'", "repo_site+'img/SR.png'", "repo_site+'img/R.png'"];
+const stmfl = [repo_site+'img/SSR.png', repo_site+'img/SR.png', repo_site+'img/R.png'];
 // var mahouzin = {
 //          type: 'html-keyboard-response',
 //          stimulus: '<img id="cursor" src="img/alchemymod.png">',
@@ -37,7 +37,7 @@ const stmfl = ["repo_site+'img/SSR.png'", "repo_site+'img/SR.png'", "repo_site+'
   /* preload images */
   var preload = {
     type: 'preload',
-    images: ["repo_site+'img/SSR.png'", "repo_site+'img/SR.png'", "repo_site+'img/R.png'"],
+    images: [repo_site+'img/SSR.png', repo_site+'img/SR.png', repo_site+'img/R.png'],
     show_detailed_errors: true
   }
   timeline.push(preload);
@@ -157,7 +157,7 @@ const stmfl = ["repo_site+'img/SSR.png'", "repo_site+'img/SR.png'", "repo_site+'
         function () {
         // Define the HTML content for the image
         const html =
-          '<img id="cursor" src="img/alchemymod.png" style="transition: transform 5s;">';
+          '<img id="cursor" src="' + repo_site + 'img/alchemymod.png" style="transition: transform 5s;">';
         // Set a timeout to rotate the image
         setTimeout(() => {
           document.getElementById("cursor").style.transform =
