@@ -168,9 +168,10 @@ var lottery = {
   //    task: 'response',
   //    correct_response: jsPsych.timelineVariable('correct_response')
   //},
-  on_finish: function(data){
-       data.correct = jsPsych.pluginAPI.compareKeys(data.response, data.correct_response);
-  },
+  // on_finish: function(data){
+  //      data.correct = jsPsych.pluginAPI.compareKeys(data.response, data.correct_response);
+  //      data.kakuritsu = 
+  // },
       };
 
 //timeline.push(showimg);
