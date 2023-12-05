@@ -184,8 +184,9 @@ const stmfl = ['img/SSR.png', 'img/SR.png', 'img/R.png'];
         //    task: 'response',
         //    correct_response: jsPsych.timelineVariable('correct_response')
         //},
-    //on_finish: function(data){
-    //     data.correct = jsPsych.pluginAPI.compareKeys(data.response, data.correct_response);
+    on_finish: function(data){
+         data.correct = jsPsych.pluginAPI.compareKeys(data.response, data.correct_response);
+    }
    }
 
     
@@ -193,7 +194,7 @@ const stmfl = ['img/SSR.png', 'img/SR.png', 'img/R.png'];
 
     var test_proc = {
         timeline: [readycheck, showimg, lottery],
-        repetitions: 10
+        repetitions: 1
     }
     timeline.push(test_proc);
 
