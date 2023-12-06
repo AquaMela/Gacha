@@ -143,7 +143,7 @@ timeline.push(readycheck);
 
 var showimg = {
   type: "html-keyboard-response",
-  stimulus: '<img id="cursor" src="' + repo_site + 'img/alchemymod.png">',
+  stimulus: '<img id="cursor" src="' + repo_site + 'img/mahojin.png">',
   trial_duration: 5000,
   on_start: function () {
     document.addEventListener("mousemove", rotateCursor);

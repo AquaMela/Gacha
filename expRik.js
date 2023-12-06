@@ -153,7 +153,7 @@ var stmfl = [repo_site+'img/SSR.png', repo_site+'img/SR.png', repo_site+'img/R.p
 
     var showimg = {
         type: 'html-keyboard-response',
-        stimulus: '<img id="cursor" src="' + repo_site + 'img/alchemymod.png">',
+        stimulus: '<img id="cursor" src="' + repo_site + 'img/mahojin.png">',
         //duration: 5000,
         on_start: function() {
            document.addEventListener('mousemove', rotateCursor);

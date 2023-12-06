@@ -157,7 +157,7 @@ var stmfl = [repo_site+'img/SSR.png', repo_site+'img/SR.png', repo_site+'img/R.p
         function () {
         // Define the HTML content for the image
         const html =
-          '<img id="cursor" src="' + repo_site + 'img/alchemymod.png" style="transition: transform 5s;">';
+          '<img id="cursor" src="' + repo_site + 'img/mahojin.png" style="transition: transform 5s;">';
         // Set a timeout to rotate the image
         setTimeout(() => {
           document.getElementById("cursor").style.transform =
