@@ -166,11 +166,11 @@ const stmfl = ['img/SSR.png', 'img/SR.png', 'img/R.png'];
         function () {
         // Define the HTML content for the image
         const html =
-          '<img id="cursor" src="img/alchemymod.png" style="transition: transform 5s;">';
+          '<img id="cursor" src="img/mahojin.png" style="transition: transform 5s;">';
         // Set a timeout to rotate the image
         setTimeout(() => {
           document.getElementById("cursor").style.transform =
-            "rotate(360deg)";
+            "rotate(1800deg)";
         }, 0);
         return html;
         //function(){
@@ -197,7 +197,7 @@ const stmfl = ['img/SSR.png', 'img/SR.png', 'img/R.png'];
 
     var test_proc = {
         timeline: [readycheck, showimg, lottery],
-        repetitions: 10
+        repetitions: 1
     }
     timeline.push(test_proc);
 

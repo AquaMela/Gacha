@@ -151,7 +151,7 @@ var stmfl = [repo_site+'img/SSR.png', repo_site+'img/SR.png', repo_site+'img/R.p
         // Set a timeout to rotate the image
         setTimeout(() => {
           document.getElementById("cursor").style.transform =
-            "rotate(360deg)";
+            "rotate(1800deg)";
         }, 0);
         return html;
         //function(){
