@@ -37,7 +37,7 @@ var stmfl = [repo_site+'img/SSR.png', repo_site+'img/SR.png', repo_site+'img/R.p
   /* preload images */
   var preload = {
     type: 'preload',
-    images: [repo_site+'img/SSR.png', repo_site+'img/SR.png', repo_site+'img/R.png'],
+    images: [repo_site+'img/SSR.png', repo_site+'img/SR.png', repo_site+'img/R.png', repo_site+'img/mahojin.png'],
     show_detailed_errors: true
   }
   timeline.push(preload);
@@ -143,6 +143,7 @@ var stmfl = [repo_site+'img/SSR.png', repo_site+'img/SR.png', repo_site+'img/R.p
     const showimg = {
         type: 'html-keyboard-response',
         trial_duration: 5000,
+        choices: jsPsych.NO_KEYS,
         stimulus: //'<img id="cursor" src="img/alchemymod.png">',
         function () {
         // Define the HTML content for the image

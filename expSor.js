@@ -5,7 +5,7 @@ var shgt = document.documentElement.clientHeight * 0.8;
 var nitem = 10;
 var thre1 = 0.96; //SSRの確率
 var thre2 = 0.71; //SRの確率
-var stmfl = [repo_site+'img/SSR.png', repo_site+'img/SR.png', repo_site+'img/R.png'];
+var stmfl = [repo_site+'img/SSR.png', repo_site+'img/SR.png', repo_site+'img/R.png', repo_site+'img/mahojin.png'];
 // var mahouzin = {
 //          type: 'html-keyboard-response',
 //          stimulus: '<img id="cursor" src="img/alchemymod.png">',
@@ -145,6 +145,7 @@ var showimg = {
   type: "html-keyboard-response",
   stimulus: '<img id="cursor" src="' + repo_site + 'img/mahojin.png">',
   trial_duration: 5000,
+  choices: jsPsych.NO_KEYS,
   on_start: function () {
     document.addEventListener("mousemove", rotateCursor);
   },
